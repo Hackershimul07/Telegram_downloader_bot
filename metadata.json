@@ -1,6 +1,6 @@
 {
-  "name": "MediaBot DL",
-  "description": "A powerful Telegram bot for downloading media from multiple platforms using the AllMedia-DL API.",
+  "name": "Shimul Downloader (শিমুল ডাউনলোডার)",
+  "description": "একটি শক্তিশালী টেলিগ্রাম বট যা বিভিন্ন সোশ্যাল মিডিয়া থেকে ভিডিও এবং অডিও ডাউনলোড করতে পারে।",
   "requestFramePermissions": [],
   "majorCapabilities": ["Full-stack development"]
 }

@@ -1,20 +1,29 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# শিমুল ডাউনলোডার (Shimul Downloader) 🎥
 
-# Run and deploy your AI Studio app
+একটি শক্তিশালী এবং ইউজার-ফ্রেন্ডলি টেলিগ্রাম বট যা আপনাকে বিভিন্ন সোশ্যাল মিডিয়া প্ল্যাটফর্ম (Instagram, TikTok, YouTube, Facebook, Pinterest ইত্যাদি) থেকে ভিডিও এবং অডিও সরাসরি ডাউনলোড করতে সাহায্য করে।
 
-This contains everything you need to run your app locally.
+## প্রধান বৈশিষ্ট্যসমূহ:
+- ✅ সরাসরি ভিডিও ফাইল পাঠানো (Direct Video Delivery)
+- ✅ ব্র্যান্ডিং বা বিজ্ঞাপনী টেক্সট রিমুভ (Branding Cleanup)
+- ✅ ভিডিওর আসল ক্যাপশন দেখানো
+- ✅ অটোমেটিক প্রসেসিং মেসেজ রিমুভাল
+- ✅ সম্পূর্ণ বাংলা ইন্টারফেস
 
-View your app in AI Studio: https://ai.studio/apps/1af7fe02-d194-4ab3-a828-40ff6a74a276
+## হোস্টিং করার নিয়মাবলী (Deployment Guide)
 
-## Run Locally
+আপনি এটি Render.com, Zeabur, Glitch বা যেকোনো Docker সাপোর্টেড প্ল্যাটফর্মে ফ্রিতে হোস্ট করতে পারেন।
 
-**Prerequisites:**  Node.js
+### ১. এনভায়রনমেন্ট ভেরিয়েবল (Environment Variables)
+হোস্টিং প্যানেলে অবশ্যই নিচের ভেরিয়েবলটি সেট করুন:
+- `TELEGRAM_BOT_TOKEN`: আপনার বটের টোকেন (Get it from @BotFather)
 
+### ২. Docker ব্যবহার করে হোস্টিং (Zeabur/Railway/Koyeb)
+যদি আপনার হোস্টিং Docker সাপোর্ট করে, তবে জাস্ট প্রজেক্টটি কানেক্ট করুন। রুট ডিরেক্টরিতে অলরেডি `Dockerfile` দেওয়া আছে, যা অটোমেটিক আপনার বটটি চালু করে দেবে।
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### ৩. Node.js ব্যবহার করে হোস্টিং (Render/Glitch)
+- **Runtime:** Node.js
+- **Build Command:** `npm install`
+- **Start Command:** `npm start`
+
+---
+লিঙ্ক পাঠিয়েই নিজের মিডিয়া ডাউনলোড করুন! শুভকামনা। 🚀
