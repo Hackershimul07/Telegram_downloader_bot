@@ -1,0 +1,6 @@
+{
+  "name": "MediaBot DL",
+  "description": "A powerful Telegram bot for downloading media from multiple platforms using the AllMedia-DL API.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["Full-stack development"]
+}
