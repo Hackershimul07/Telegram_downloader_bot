@@ -147,9 +147,14 @@ async function startServer() {
         }
       });
 
-      bot.on("polling_error", (error) => {
-        console.error("Polling error:", error.message);
-        botStatus = "Error: " + error.message;
+      bot.on("polling_error", (error: any) => {
+        if (error.message.includes("409 Conflict")) {
+          console.error("Conflict Error: Another instance of this bot is already running elsewhere.");
+          botStatus = "Error: Conflict (409). Check if your bot is running in another tab or hosting site.";
+        } else {
+          console.error("Polling error:", error.message);
+          botStatus = "Error: " + error.message;
+        }
       });
 
     } catch (err) {
